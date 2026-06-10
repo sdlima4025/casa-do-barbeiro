@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Casa do Barbeiro</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" 
+    rel="stylesheet"
+  >
+</head>
+<body>
+
+  <!-- Barra Promocional -->
+  <div class="top-bar">
+    <!-- <p>🔥 10% OFF ou Frete Grátis em compras à partir de R$ 100,00 | Produtos profissionais para barbearia</p> -->
+  </div>
+
+  <!-- Botão lateral desconto -->
+  <a href="#produtos" class="discount-fixed">
+    <span>OFERTA</span>
+    <strong>Frete Grátis</strong>
+    <small>à partir de R$ 100</small>
+  </a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+    <a href="#inicio" class="logo">
+  <img src="img/logo-CB.png" alt="Logo Casa do Barbeiro">
+</a>
+
+
+      <nav class="nav" id="navMenu">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#carrinho">Carrinho</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="tag">Produtos profissionais</span>
+
+        <h1>Produtos para quem leva barbearia a sério</h1>
+
+        <p>
+          Pomadas, ceras, óleos, shampoos e finalizadores selecionados para barbeiros,
+          barbearias e clientes que buscam qualidade no cuidado diário.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#produtos" class="btn primary">Ver Produtos</a>
+          <a href="#carrinho" class="btn secondary">Ver Carrinho</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-highlight">
+          <span>Oferta: 10% OFF ou Frete Grátis!</span>
+          <h2>10% OFF</h2>
+          <p>Em compras à partir de R$ 100,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="categories">
+    <div class="container">
+      <h2>O que você precisa hoje?</h2>
+
+      <div class="category-grid">
+        <div class="category-card">
+          <span>💈</span>
+          <h3>Pomadas</h3>
+        </div>
+
+        <div class="category-card">
+          <span>🧔</span>
+          <h3>Barba</h3>
+        </div>
+
+        <div class="category-card">
+          <span>🧴</span>
+          <h3>Shampoos</h3>
+        </div>
+
+        <div class="category-card">
+          <span>✂️</span>
+          <h3>Bancada</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="section-title">
+        <span>Mais vendidos</span>
+        <h2>Produtos em destaque</h2>
+        <p>Adicione os produtos ao carrinho e finalize o pedido pelo WhatsApp.</p>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Produtos renderizados pelo JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrinho -->
+  <section class="cart-section" id="carrinho">
+    <div class="container">
+      <div class="section-title">
+        <span>Seu pedido</span>
+        <h2>Carrinho de compras</h2>
+        <p>Compras à partir de R$ 100,00 recebem desconto automático de 10%.</p>
+      </div>
+
+      <div class="cart-box">
+        <div id="cartItems" class="cart-items">
+          <p class="empty-cart">Seu carrinho ainda está vazio.</p>
+        </div>
+
+        <div class="cart-summary">
+          <div class="summary-line">
+            <span>Subtotal:</span>
+            <strong id="subtotal">R$ 0,00</strong>
+          </div>
+
+          <div class="summary-line discount-line">
+            <span>Desconto:</span>
+            <strong id="discount">R$ 0,00</strong>
+          </div>
+
+          <div class="summary-line total-line">
+            <span>Total:</span>
+            <strong id="total">R$ 0,00</strong>
+          </div>
+
+          <p id="discountMessage" class="discount-message">
+            Faltam R$ 100,00 para liberar 10% de desconto.
+          </p>
+
+          <button class="checkout-btn" id="checkoutBtn">
+            Finalizar pedido pelo WhatsApp
+          </button>
+
+          <button class="clear-btn" id="clearCartBtn">
+            Limpar carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="benefits" id="beneficios">
+    <div class="container benefits-grid">
+      <div class="benefit-card">
+        <span>🚚</span>
+        <h3>Entrega local</h3>
+        <p>Entrega para Salvador e região, conforme disponibilidade.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span>💳</span>
+        <h3>Pagamento facilitado</h3>
+        <p>Consulte opções via PIX, cartão ou pagamento combinado.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span>💈</span>
+        <h3>Uso profissional</h3>
+        <p>Produtos ideais para barbearias, barbeiros e uso pessoal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-title">
+        <span>Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>Como funciona o desconto?</summary>
+          <p>Ao atingir R$ 100,00 no carrinho, o sistema aplica automaticamente 10% de desconto.</p>
+        </details>
+
+        <details>
+          <summary>O pedido é finalizado pelo site?</summary>
+          <p>Nesta versão beta, o pedido é enviado pelo WhatsApp para confirmação do atendimento.</p>
+        </details>
+
+        <details>
+          <summary>Posso trocar os produtos depois?</summary>
+          <p>Sim. Os produtos cadastrados no JavaScript podem ser alterados facilmente.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contato">
+    <div class="container footer-content">
+      <div>
+        <h3>Casa do Barbeiro</h3>
+        <p>Fazenda Grande 3 de Cajazeiras.</p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p>WhatsApp: (71) 98386-2365</p>
+        <p>Salvador - BA</p>
+      </div>
+
+      <div>
+        <h4>Atendimento</h4>
+        <p>Segunda a sábado</p>
+        <p>Das 8h às 18h</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Casa do Barbeiro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
