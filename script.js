@@ -452,7 +452,7 @@ function checkoutWhatsApp() {
   message += `Total: ${formatCurrency(total)}%0A%0A`;
   message += "Gostaria de confirmar disponibilidade, entrega e forma de pagamento.";
 
-  const phoneNumber = "5571999999999";
+  const phoneNumber = "5571983862365";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   window.open(whatsappUrl, "_blank");
