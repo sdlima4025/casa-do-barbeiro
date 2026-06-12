@@ -474,6 +474,13 @@ img {
   text-align: center;
 }
 
+.empty-category {
+  color: var(--gray);
+  text-align: center;
+  padding: 40px;
+  grid-column: 1 / -1;
+}
+
 .cart-item {
   display: grid;
   grid-template-columns: 1fr auto;

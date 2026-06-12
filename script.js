@@ -6,7 +6,8 @@ const products = [
     oldPrice: 24.99,
     price: 12.99,
     image: "img/pasta-hawk-black-150g.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "pomadas"
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ const products = [
     oldPrice: 24.99,
     price: 12.99,
     image: "img/pasta-hawk-incolor-cristal-150g.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "pomadas"
   },
   {
     id: 2,
@@ -24,7 +26,8 @@ const products = [
     oldPrice: 24.99,
     price: 12.99,
     image: "img/pasta-hawk-caramelo-150g.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "pomadas"
   },
   {
     id: 2,
@@ -33,7 +36,8 @@ const products = [
     oldPrice: 24.99,
     price: 12.99,
     image: "img/cera-hawk-efeito-matte-150g.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "pomadas"
   },
   {
     id: 3,
@@ -42,7 +46,8 @@ const products = [
     oldPrice: 39.99,
     price: 24.99,
     image: "img/shampoo-anticaspa-classe-a-300ml.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "shampoos"
   },
   {
     id: 3,
@@ -51,7 +56,8 @@ const products = [
     oldPrice: 39.99,
     price: 24.99,
     image: "img/shampoo-sem-sal-classe-a-300ml.png",
-    badge: "SALE"
+    badge: "SALE",
+    category: "shampoos"
   },
   {
     id: 4,
@@ -60,7 +66,8 @@ const products = [
     oldPrice: 29.99,
     price: 12.99,
     image: "img/gel-cola-megafixacao-classe-a-300g.png",
-    badge: "NOVO"
+    badge: "NOVO",
+    category: "pomadas"
   },
   {
     id: 4,
@@ -69,7 +76,8 @@ const products = [
     oldPrice: 29.99,
     price: 12.99,
     image: "img/gel-cera-hidratante-classe-a-300g.png",
-    badge: "NOVO"
+    badge: "NOVO",
+    category: "pomadas"
   },
   {
     id: 5,
@@ -78,7 +86,8 @@ const products = [
     oldPrice: 40.0,
     price: 20.0,
     image: "img/balm-barba-bigode-classe-a-120g.png",
-    badge: "SALE"
+    badge: "SALE",
+    category: "barba"
   },
   {
     id: 6,
@@ -87,7 +96,8 @@ const products = [
     oldPrice: 35.0,
     price: 22.0,
     image: "img/locao-pos-barba-classe-a-vermelha.png",
-    badge: "NOVO"
+    badge: "NOVO",
+    category: "barba"
   },
   {
     id: 6,
@@ -96,7 +106,8 @@ const products = [
     oldPrice: 35.0,
     price: 22.0,
     image: "img/locao-pos-barba-classe-a-verde-240ml.png",
-    badge: "NOVO"
+    badge: "NOVO",
+    category: "barba"
   },
   {
     id: 7,
@@ -105,7 +116,8 @@ const products = [
     oldPrice: 32.9,
     price: 18.6,
     image: "img/oleo-barba-classe-a-30ml.png",
-    badge: "SALE"
+    badge: "SALE",
+    category: "barba"
   },
   {
     id: 8,
@@ -114,7 +126,8 @@ const products = [
     oldPrice: 44.9,
     price: 34.9,
     image: "img/gola-higienica.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "bancada"
   },
   {
     id: 8,
@@ -123,7 +136,8 @@ const products = [
     oldPrice: 54.99,
     price: 34.99,
     image: "img/shaving-gel-1l-site.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "bancada"
   },
   {
     id: 8,
@@ -132,7 +146,8 @@ const products = [
     oldPrice: 54.9,
     price: 34.99,
     image: "img/lamina-wilkinson-sword.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "bancada"
   },
   {
     id: 8,
@@ -141,7 +156,8 @@ const products = [
     oldPrice: 54.9,
     price: 34.99,
     image: "img/lamina-derby-extra.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "bancada"
   },
   {
     id: 8,
@@ -150,7 +166,8 @@ const products = [
     oldPrice: 59.99,
     price: 34.99,
     image: "img/serum-crescimento-hawk.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "barba"
   },
   {
     id: 8,
@@ -159,7 +176,8 @@ const products = [
     oldPrice: 249.99,
     price: 124.99,
     image: "img/kit-barbeiro.jpg",
-    badge: "SALE"
+    badge: "SALE",
+    category: "bancada"
   },
   {
     id: 8,
@@ -168,7 +186,8 @@ const products = [
     oldPrice: 249.99,
     price: 174.99,
     image:"img/kit1-diversos.png",
-    badge: "SALE"
+    badge: "SALE",
+    category: "bancada"
   },
   {
     id: 8,
@@ -177,7 +196,8 @@ const products = [
     oldPrice: '249.99',
     price: '124.99',
     image: "img/kit-pastas-300g.png",
-    badge: "SALE"
+    badge: "SALE",
+    category: "pomadas"
   }
 ];
 
@@ -237,6 +257,55 @@ function renderProducts() {
 
     productGrid.appendChild(productCard);
   });
+}
+
+let currentCategory = null;
+
+function filterByCategory(category) {
+  currentCategory = category;
+  productGrid.innerHTML = "";
+
+  const filteredProducts = products.filter((product) => product.category === category);
+
+  if (filteredProducts.length === 0) {
+    productGrid.innerHTML = `<p class="empty-category">Nenhum produto encontrado nesta categoria.</p>`;
+    return;
+  }
+
+  filteredProducts.forEach((product) => {
+    const productCard = document.createElement("article");
+    productCard.classList.add("product-card");
+
+    productCard.innerHTML = `
+      <div class="sale-badge">${product.badge}</div>
+
+      <div class="product-img">
+        <img src="${product.image}" alt="${product.name}">
+      </div>
+
+      <div class="product-info">
+        <h3>${product.name}</h3>
+        <p>${product.description}</p>
+
+        <div class="price-box">
+          <span class="old-price">${formatCurrency(product.oldPrice)}</span>
+          <strong>${formatCurrency(product.price)}</strong>
+          <small>Valor por unidade</small>
+        </div>
+
+        <button class="add-btn" onclick="addToCart(${product.id})">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    `;
+
+    productGrid.appendChild(productCard);
+  });
+}
+
+function showAllProducts() {
+  currentCategory = null;
+  renderProducts();
 }
 
 function addToCart(productId) {
