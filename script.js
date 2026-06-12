@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     name: "Pasta  Black 150g",
-    description: "Fixação média, acabamento natural e fácil aplicação para penteados modernos.",
+    description: "Fixação média com acabamento natural. Perfeita para penteados modernos com aspecto profissional, fácil de aplicar e remover.",
     oldPrice: 24.99,
     price: 12.99,
     image: "img/pasta-hawk-black-150g.jpg",
@@ -11,7 +11,7 @@ const products = [
   {
     id: 2,
     name: "Pasta  Incolor Cristal 150g",
-    description: "Hidrata, perfuma e ajuda a manter a barba alinhada durante o dia.",
+    description: "Hidratação intensa com brilho cristalino. Mantém a barba alinhada e perfumada o dia todo, sem deixar resíduos visíveis.",
     oldPrice: 24.99,
     price: 12.99,
     image: "img/pasta-hawk-incolor-cristal-150g.jpg",
@@ -20,7 +20,7 @@ const products = [
   {
     id: 2,
     name: "Pasta  Caramelo Cristal 150g",
-    description: "Hidrata, perfuma e ajuda a manter a barba alinhada durante o dia.",
+    description: "Combinação de hidratação e fixação com acabamento brilhante em tom caramelo. Ideal para barbas volumosas e penteados sofisticados.",
     oldPrice: 24.99,
     price: 12.99,
     image: "img/pasta-hawk-caramelo-150g.jpg",
@@ -29,7 +29,7 @@ const products = [
   {
     id: 2,
     name: "Cera  Mate Cristal 150g",
-    description: "Hidrata, perfuma e ajuda a manter a barba alinhada durante o dia.",
+    description: "Efeito fosco moderno com fixação excelente. Perfeita para looks descontraídos que mantêm textura e definição sem brilho.",
     oldPrice: 24.99,
     price: 12.99,
     image: "img/cera-hawk-efeito-matte-150g.jpg",
@@ -38,7 +38,7 @@ const products = [
   {
     id: 3,
     name: "Shampoo Anti-Caspa Profissional 300ml",
-    description: "Limpeza profunda com fórmula ideal para uso diário em barbearias.",
+    description: "Limpeza profunda e eficaz contra caspa. Fórmula especial desenvolvida para barbearias, apropriada para uso diário sem ressecamento.",
     oldPrice: 39.99,
     price: 24.99,
     image: "img/shampoo-anticaspa-classe-a-300ml.jpg",
@@ -47,7 +47,7 @@ const products = [
   {
     id: 3,
     name: "Shampoo 3 em 1 Profissional 300ml",
-    description: "Limpeza profunda com fórmula ideal para uso diário em barbearias.",
+    description: "Limpeza, hidratação e condicionamento em um só produto. Fórmula prática e econômica perfeita para rotinas de barbearia.",
     oldPrice: 39.99,
     price: 24.99,
     image: "img/shampoo-sem-sal-classe-a-300ml.png",
@@ -56,7 +56,7 @@ const products = [
   {
     id: 4,
     name: "Gel Cola Fixação Forte 300g",
-    description: "Alta fixação, brilho controlado e excelente rendimento para uso profissional.",
+    description: "Fixação poderosa com brilho controlado. Ideal para penteados que exigem resistência o dia inteiro com acabamento impeccável.",
     oldPrice: 29.99,
     price: 12.99,
     image: "img/gel-cola-megafixacao-classe-a-300g.png",
@@ -65,7 +65,7 @@ const products = [
   {
     id: 4,
     name: "Gel Cera Fixação Forte 300g",
-    description: "Alta fixação, brilho controlado e excelente rendimento para uso profissional.",
+    description: "Fixação robusta com hidratação prolongada. Combina o poder de fixação com maciez nos fios, resultado profissional garantido.",
     oldPrice: 29.99,
     price: 12.99,
     image: "img/gel-cera-hidratante-classe-a-300g.png",
@@ -74,7 +74,7 @@ const products = [
   {
     id: 5,
     name: "Balm para Barba e Bigode 120ml",
-    description: "Ajuda a hidratar, alinhar e suavizar os fios da barba.",
+    description: "Balm nutritivo que hidrata, alinha e suaviza os fios. Mantém a barba saudável, alinhada e com aroma agradável.",
     oldPrice: 40.0,
     price: 20.0,
     image: "img/balm-barba-bigode-classe-a-120g.png",
@@ -83,7 +83,7 @@ const products = [
   {
     id: 6,
     name: "Pós-Barba Refrescante 240ml",
-    description: "Sensação refrescante após o barbear, ajudando a acalmar a pele.",
+    description: "Sensação refrescante e revitalizante após o barbear. Acalma a pele, deixando-a suave e com aroma agradável que dura.",
     oldPrice: 35.0,
     price: 22.0,
     image: "img/locao-pos-barba-classe-a-vermelha.png",
@@ -92,7 +92,7 @@ const products = [
   {
     id: 6,
     name: "Pós-Barba Refrescante 240ml",
-    description: "Sensação refrescante após o barbear, ajudando a acalmar a pele.",
+    description: "Loção refrescante e hidratante com fragrância vibrante. Acalma irritações pós-barba deixando a pele revitalizada e tonificada.",
     oldPrice: 35.0,
     price: 22.0,
     image: "img/locao-pos-barba-classe-a-verde-240ml.png",
@@ -101,7 +101,7 @@ const products = [
   {
     id: 7,
     name: "Óleo para Barba 30ml",
-    description: "Produto ideal para hidratação dos fios da barba, produzindo uma aparência profissional.",
+    description: "Óleo nutritivo que hidrata profundamente os fios e a pele. Deixa a barba macia, brilhante e com aparência profissional.",
     oldPrice: 32.9,
     price: 18.6,
     image: "img/oleo-barba-classe-a-30ml.png",
@@ -109,65 +109,74 @@ const products = [
   },
   {
     id: 8,
-    name: "Gel Cola Mega Fixação 1000g",
-    description: "Fixação extra forte para penteados que precisam durar o dia inteiro.",
-    oldPrice: 32.9,
-    price: 18.0,
-    image: "img/gel-cola.png",
+    name: "Gola Higiênica para Barbeiros - pacote com 500 Golas",
+    description: "Pacote econômico com 500 golas higiênicas. Essencial para barbearias que buscam higiene, conforto e praticidade no dia a dia.",
+    oldPrice: 44.9,
+    price: 34.9,
+    image: "img/gola-higienica.jpg",
     badge: "SALE"
   },
   {
     id: 8,
-    name: "Gel Cola Mega Fixação 500g",
-    description: "Fixação extra forte para penteados que precisam durar o dia inteiro.",
-    oldPrice: 32.9,
-    price: 18.0,
-    image: "img/gel-cola.png",
+    name: "Shaving Gel 1L",
+    description: "Gel de barbear profissional em formato econômico. Fornece deslizamento perfeito da lâmina e conforto máximo durante o barbear.",
+    oldPrice: 54.99,
+    price: 34.99,
+    image: "img/shaving-gel-1l-site.jpg",
     badge: "SALE"
   },
   {
     id: 8,
-    name: "Gel Cola Mega Fixação 500g",
-    description: "Fixação extra forte para penteados que precisam durar o dia inteiro.",
-    oldPrice: 32.9,
-    price: 18.0,
-    image: "img/gel-cola.png",
+    name: "Lâmina Wilkinson Sword",
+    description: "Lâmina de qualidade premium com fio ultra-afiado. Proporciona barbear preciso, confortável e durável para resultados impecáveis.",
+    oldPrice: 54.9,
+    price: 34.99,
+    image: "img/lamina-wilkinson-sword.jpg",
     badge: "SALE"
   },
   {
     id: 8,
-    name: "Gel Cola Mega Fixação 500g",
-    description: "Fixação extra forte para penteados que precisam durar o dia inteiro.",
-    oldPrice: 32.9,
-    price: 18.0,
-    image: "img/gel-cola.png",
+    name: "Lâmina Derby Extra",
+    description: "Lâmina clássica com excelente relação qualidade-preço. Fio afiado que garante barbear limpo e seguro para profissionais.",
+    oldPrice: 54.9,
+    price: 34.99,
+    image: "img/lamina-derby-extra.jpg",
     badge: "SALE"
   },
   {
     id: 8,
-    name: "Gel Cola Mega Fixação 500g",
-    description: "Fixação extra forte para penteados que precisam durar o dia inteiro.",
-    oldPrice: 32.9,
-    price: 18.0,
-    image: "img/gel-cola.png",
+    name: "Serum de Crescimento Hawk",
+    description: "Sérum estimulante especial para fortalecer barba e bigode. Promove crescimento saudável e aparência mais densa e volumosa.",
+    oldPrice: 59.99,
+    price: 34.99,
+    image: "img/serum-crescimento-hawk.jpg",
     badge: "SALE"
   },
   {
     id: 8,
-    name: "Gel Cola Mega Fixação 500g",
-    description: "Fixação extra forte para penteados que precisam durar o dia inteiro.",
-    oldPrice: 32.9,
-    price: 18.0,
-    image: "img/gel-cola.png",
+    name: "Kit Barbeiro Completo com 10 pastas diversas",
+    description: "Kit essencial com os produtos mais populares para barba perfeita. Solução completa para quem quer qualidade profissional em casa.",
+    oldPrice: 249.99,
+    price: 124.99,
+    image: "img/kit-barbeiro.jpg",
     badge: "SALE"
   },
   {
     id: 8,
-    name: "Gel Cola Mega Fixação 500g",
-    description: "Fixação extra forte para penteados que precisam durar o dia inteiro.",
-    oldPrice: 32.9,
-    price: 18.0,
-    image: "img/gel-cola.png",
+    name: "Kit - 05 produtos diversos com 50% de desconto",
+    description: "Kit promocional com seleção especial de produtos Casa do Barbeiro. Descubra as melhores combinações para sua rotina de cuidados.",
+    oldPrice: 249.99,
+    price: 174.99,
+    image:"img/kit1-diversos.png",
+    badge: "SALE"
+  },
+  {
+    id: 8,
+    name: "Kit - 10 Gel cera ou cola com 50% de desconto",
+    description: "Kit exclusivo com produtos de destaque. Aproveitamento máximo para quem deseja experimentar toda a linha Casa do Barbeiro.",
+    oldPrice: '249.99',
+    price: '124.99',
+    image: "img/kit-pastas-300g.png",
     badge: "SALE"
   }
 ];
