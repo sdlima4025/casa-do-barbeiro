@@ -303,7 +303,9 @@ function filterByCategory(category) {
     `;
 
     const addBtn = productCard.querySelector(".add-btn");
-    addBtn.addEventListener("click", () => addToCart(product.id));
+    addBtn.addEventListener("click", () => {
+      addToCart(product.id);
+    });
 
     productGrid.appendChild(productCard);
   });
