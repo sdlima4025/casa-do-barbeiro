@@ -193,8 +193,8 @@ const products = [
     id: 8,
     name: "Kit - 10 Gel cera ou cola com 50% de desconto",
     description: "Kit exclusivo com produtos de destaque. Aproveitamento máximo para quem deseja experimentar toda a linha Casa do Barbeiro.",
-    oldPrice: '249.99',
-    price: '124.99',
+    oldPrice: 249.99,
+    price: 124.99,
     image: "img/kit-pastas-300g.png",
     badge: "SALE",
     category: "pomadas"
