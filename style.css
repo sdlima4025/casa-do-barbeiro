@@ -249,6 +249,7 @@ img {
   backdrop-filter: blur(8px);
 }
 
+
 .hero-highlight {
   background: var(--white);
   color: var(--black);
